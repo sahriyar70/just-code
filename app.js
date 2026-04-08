@@ -80,4 +80,23 @@ for (let keyvalue in obj ){
     console.log(keyvalue, obj[keyvalue])
 }
 
- 
+// let h3 = document.createElement("h3")
+
+// h3.textContent = " lal "
+
+// document.body.append(h3)
+
+// h3.style.color = "red"
+
+
+let p = document.querySelector("p")
+
+p.addEventListener("click",function(){
+    p.style.color= "green"
+})
+
+p.addEventListener("dblclick",function(){
+    p.style.color = "red"
+})
+
+
