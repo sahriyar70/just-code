@@ -89,14 +89,31 @@ for (let keyvalue in obj ){
 // h3.style.color = "red"
 
 
-let p = document.querySelector("p")
+// let p = document.querySelector("p")
 
-p.addEventListener("click",function(){
-    p.style.color= "green"
+// p.addEventListener("click",function(){
+//     p.style.color= "green"
+// })
+
+// p.addEventListener("dblclick",function(){
+//     p.style.color = "red"
+// })
+
+
+
+// let inp = document.querySelector("input")
+
+// inp.addEventListener("input",function(d){
+//     if(d.data !== null){
+//         console.log(d.data)
+//     }
+// })
+
+
+let sel = document.querySelector("select")
+
+let device = document.querySelector("#device")
+
+sel.addEventListener("change",function(data){
+    device.textContent = `${data.target.value} divec selected `
 })
-
-p.addEventListener("dblclick",function(){
-    p.style.color = "red"
-})
-
-
