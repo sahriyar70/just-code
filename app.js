@@ -72,7 +72,7 @@ let c = counter ()
 
 let obj = {
     name : 'sahriyar ',
-    age : 30 ,
+    age : 19 ,
     address : "djfdaf"
 }
 
@@ -110,10 +110,39 @@ for (let keyvalue in obj ){
 // })
 
 
-let sel = document.querySelector("select")
+// let sel = document.querySelector("select")
 
-let device = document.querySelector("#device")
+// let device = document.getElementById("device")
 
-sel.addEventListener("change",function(data){
-    device.textContent = `${data.target.value} divec selected `
+
+// sel.addEventListener("change",function(data){
+//     device.textContent = `${data.target.value} Device Selected `
+// })
+
+//  let win = document.querySelector("h1")
+
+// window.addEventListener("keydown",function(data){
+//      if(data.key === " "){
+//         win.textContent = "sps"
+//      }else {
+//         win.textContent = data.key
+//      }
+// })
+
+
+let file = document.querySelector("#fileinput")
+
+let btn = document.querySelector("#btn")
+
+btn.addEventListener("click",function(data){
+  file.click()
+})
+
+file.addEventListener("change",function(data){
+   const file =  data.target.files[0]
+   if(file){
+     btn.textContent = file.name
+   }
+
+
 })
