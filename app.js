@@ -146,3 +146,13 @@ file.addEventListener("change",function(data){
 
 
 })
+
+let objt = {
+    name : 'sahriar',
+    age : 19,
+    output : function (){
+        console.log(this.age,this.name)
+    },
+}
+
+objt.output()
