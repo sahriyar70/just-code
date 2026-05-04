@@ -155,4 +155,13 @@ let objt = {
     },
 }
 
-objt.output()
+// objt.output()
+
+function Catagori (name,age,address) {
+    this.name = name,
+    this.age = age ,
+    this.address = address 
+}
+
+ const output = new Catagori('sahriayr',19,'Rangpur')
+ console.log(output)
