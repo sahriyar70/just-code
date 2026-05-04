@@ -157,11 +157,12 @@ let objt = {
 
 // objt.output()
 
-function Catagori (name,age,address) {
+function Catagori (name,age,address,id) {
     this.name = name,
     this.age = age ,
     this.address = address 
+    this.id = id
 }
 
- const output = new Catagori('sahriayr',19,'Rangpur')
+ const output = new Catagori('sahriayr',19,'Rangpur',9)
  console.log(output)
