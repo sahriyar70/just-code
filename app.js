@@ -165,4 +165,15 @@ function Catagori (name,age,address,id) {
 }
 
  const output = new Catagori('sahriayr',19,'Rangpur',9)
- console.log(output)
+//  console.log(output)
+
+
+function callback (username , cb){
+    cb({username, age:19, email :' sahriyar@gmail.com' })
+
+
+}
+
+callback('sahriyar',function(data){
+    // console.log(data)
+})
