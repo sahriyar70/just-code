@@ -177,3 +177,25 @@ function callback (username , cb){
 callback('sahriyar',function(data){
     // console.log(data)
 })
+
+
+
+async function getUser() {
+  try {
+    l
+    let response = await fetch("https://jsonplaceholder.typicode.com/users/1");
+
+    
+    let data = await response.json();
+
+    
+    console.log("User Name:", data.name);
+    console.log("Email:", data.email);
+
+  } catch (error) {
+    console.log("Error:", error);
+  }
+}
+
+// function call
+// getUser();
