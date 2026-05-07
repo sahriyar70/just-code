@@ -205,3 +205,32 @@ async function getUser() {
 //     return 1234;
 // })();
 
+let bank = (function(){
+    
+    let balench = 1223
+
+    function chakbalec (){
+        console.log(balench)
+    }
+
+    function setBalance (val){
+        console.log(val)
+    }
+
+    function withdrwa (val){
+        console.log(val)
+    }
+
+    return {
+       chack : chakbalec,
+       set : setBalance,
+       withdrwa: withdrwa
+    }
+
+})()
+
+
+// bank.set()
+// bank.chack()
+// bank.withdrwa(9696)
+
