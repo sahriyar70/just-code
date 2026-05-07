@@ -199,3 +199,9 @@ async function getUser() {
 
 // function call
 // getUser();
+
+
+// let fun  = (function(){
+//     return 1234;
+// })();
+
