@@ -234,3 +234,6 @@ let bank = (function(){
 // bank.chack()
 // bank.withdrwa(9696)
 
+// Dbunching
+
+
