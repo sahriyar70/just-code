@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy Loading Test</title>
+
+  <style>
+
+    body{
+      margin:0;
+      padding:0;
+      font-family: Arial, sans-serif;
+      background:#f4f4f4;
+    }
+
+    h1{
+      text-align:center;
+      margin:40px 0;
+    }
+
+    .container{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:80px;
+      padding-bottom:100px;
+    }
+
+    img{
+      width:700px;
+      max-width:90%;
+      min-height:400px;
+      object-fit:cover;
+      border-radius:15px;
+      background:#ccc;
+      box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .spacer{
+      height:500px;
+    }
+
+    .lazy{
+  opacity:0;
+  transition:1s;
+}
+
+.lazy.loaded{
+  opacity:1;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Lazy Loading Images Test</h1>
+
+  <div class="container">
+
+    <img
+      class="lazy"
+      src="https://via.placeholder.com/700x400?text=Loading..."
+      data-src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200"
+      alt="Nature"
+    >
+
+    <div class="spacer"></div>
+
+    <img
+      class="lazy"
+      src="https://via.placeholder.com/700x400?text=Loading..."
+      data-src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?q=80&w=1200"
+      alt="Mountain"
+    >
+
+    <div class="spacer"></div>
+
+    <img
+      class="lazy"
+      src="https://via.placeholder.com/700x400?text=Loading..."
+      data-src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1200"
+      alt="Forest"
+    >
+
+    <div class="spacer"></div>
+
+    <img
+      class="lazy"
+      src="https://via.placeholder.com/700x400?text=Loading..."
+      data-src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200"
+      alt="Sea"
+    >
+
+    <div class="spacer"></div>
+
+    <img
+      class="lazy"
+      src="https://via.placeholder.com/700x400?text=Loading..."
+      data-src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK255_Google_Gemini_D.jpg"
+      alt="Gemini"
+    >
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
