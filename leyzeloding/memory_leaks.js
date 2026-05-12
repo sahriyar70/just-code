@@ -16,3 +16,18 @@ function startLeak() {
 
 startLeak();
 
+//Proper Fix 
+
+const interval = setInterval(() => {
+
+  console.log("Running...");
+
+}, 1000);
+
+setTimeout(() => {
+
+  clearInterval(interval);
+
+  console.log("Stopped");
+
+}, 5000);
