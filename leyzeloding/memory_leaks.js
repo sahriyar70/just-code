@@ -31,3 +31,21 @@ setTimeout(() => {
   console.log("Stopped");
 
 }, 5000);
+
+//call stack 
+
+function one() {
+  console.log("Function One");
+  two();
+}
+
+function two() {
+  console.log("Function Two");
+  three();
+}
+
+function three() {
+  console.log("Function Three");
+}
+
+one();
