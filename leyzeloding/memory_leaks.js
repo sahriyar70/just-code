@@ -48,4 +48,6 @@ function three() {
   console.log("Function Three");
 }
 
-one();
+one();  
+
+//JavaScript end 
