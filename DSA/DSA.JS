@@ -31,3 +31,10 @@ let hasCoupon = true;
 if (isStudent || hasCoupon) {
     console.log("Discount pabe");
 }
+
+//Ternary condition (short form)
+let age = 16;
+
+let result = age >= 18 ? "Adult" : "Child";
+
+console.log(result);
