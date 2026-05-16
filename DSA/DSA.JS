@@ -33,8 +33,17 @@ if (isStudent || hasCoupon) {
 }
 
 //Ternary condition (short form)
-let age = 16;
+let ages = 16;
 
-let result = age >= 18 ? "Adult" : "Child";
+let result = ages >= 18 ? "Adult" : "Child";
 
 console.log(result);
+
+//Nestet Ternary 
+
+let  num = 0
+
+
+let number = num>0?'posetive':num<0?'Negetive':'Zero'
+
+console.log(number)
