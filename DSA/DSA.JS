@@ -47,3 +47,25 @@ let  num = 0
 let number = num>0?'posetive':num<0?'Negetive':'Zero'
 
 console.log(number)
+
+
+//switch 
+
+let mode = "hard";
+
+switch(mode) {
+    case "easy":
+        console.log("Easy Mode");
+        break;
+
+    case "medium":
+        console.log("Medium Mode");
+        break;
+
+    case "hard":
+        console.log("Hard Mode");
+        break;
+
+    default:
+        console.log("Unknown Mode");
+}
