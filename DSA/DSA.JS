@@ -22,3 +22,12 @@ if (age >= 18 && hasID) {
 } else {
     console.log("Not Allowed");
 }
+
+// OR (||) condition
+
+let isStudent = false;
+let hasCoupon = true;
+
+if (isStudent || hasCoupon) {
+    console.log("Discount pabe");
+}
