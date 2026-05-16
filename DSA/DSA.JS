@@ -12,3 +12,13 @@ if (marks >= 80) {
     console.log("Fail");
 }
 
+// AND (&&) condition
+
+let age = 20;
+let hasID = true;
+
+if (age >= 18 && hasID) {
+    console.log("Allowed");
+} else {
+    console.log("Not Allowed");
+}
