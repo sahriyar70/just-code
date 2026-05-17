@@ -88,3 +88,12 @@ let fruits = ["Apple", "Mango", "Banana"];
 for(let i = 0; i < fruits.length; i++) {
     console.log(fruits[i]);
 }
+
+//Sum Example
+let sum = 0;
+
+for(let i = 1; i <= 5; i++) {
+    sum = sum + i;
+}
+
+console.log(sum);
