@@ -81,3 +81,10 @@ for(let i = 1; i <= 5; i++) {
 for(let i = 5; i >= 1; i--) {
     console.log(i);
 }
+
+//Array Loop
+let fruits = ["Apple", "Mango", "Banana"];
+
+for(let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
