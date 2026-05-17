@@ -69,3 +69,10 @@ switch(mode) {
     default:
         console.log("Unknown Mode");
 }
+
+
+//Simple Loop
+
+for(let i = 1; i <= 5; i++) {
+    console.log(i);
+} 
