@@ -99,6 +99,7 @@ for(let i = 1; i <= 5; i++) {
 console.log(sum);
 
 
+
 // Even Number Print
 for(let i = 1; i <= 10; i++) {
 
