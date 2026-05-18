@@ -108,3 +108,30 @@ for(let i = 1; i <= 10; i++) {
     }
 
 }
+
+//Calculator Program
+let num1 = 10;
+let num2 = 5;
+let op = "+";
+
+switch(op) {
+
+    case "+":
+        console.log(num1 + num2);
+        break;
+
+    case "-":
+        console.log(num1 - num2);
+        break;
+
+    case "*":
+        console.log(num1 * num2);
+        break;
+
+    case "/":
+        console.log(num1 / num2);
+        break;
+
+    default:
+        console.log("Invalid Operator");
+}
