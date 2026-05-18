@@ -135,3 +135,10 @@ switch(op) {
     default:
         console.log("Invalid Operator");
 }
+
+//epsilon compare
+let num = 0.1 + 0.2;
+
+if (Math.abs(num - 0.3) < Number.EPSILON) {
+    console.log("hello");
+}
