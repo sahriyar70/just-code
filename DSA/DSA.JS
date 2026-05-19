@@ -142,3 +142,12 @@ let num = 0.1 + 0.2;
 if (Math.abs(num - 0.3) < Number.EPSILON) {
     console.log("hello");
 }
+
+//Array Traverse using while loop
+let arr = [10, 20, 30, 40];
+let i = 0;
+
+while (i < arr.length) {
+    console.log(arr[i]);
+    i++;
+}
