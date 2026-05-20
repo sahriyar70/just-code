@@ -162,4 +162,13 @@ while (i < arr.length) {
     i++;
 }
 
+//Reverse Traversal
 console.log(sum);
+
+let arr = [1, 2, 3, 4];
+let i = arr.length - 1;
+
+while (i >= 0) {
+    console.log(arr[i]);
+    i--;
+}
