@@ -194,3 +194,15 @@ while (left <= right) {
         right = mid - 1;
     }
 }
+
+//Sum of Array
+let arr = [1, 2, 3, 4];
+let i = 0;
+let sum = 0;
+
+do {
+    sum += arr[i];
+    i++;
+} while (i < arr.length);
+
+console.log(sum);
