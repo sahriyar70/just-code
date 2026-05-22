@@ -206,3 +206,12 @@ do {
 } while (i < arr.length);
 
 console.log(sum);
+
+//Reverse Traversal
+let arr = [5, 4, 3, 2];
+let i = arr.length - 1;
+
+do {
+    console.log(arr[i]);
+    i--;
+} while (i >= 0);
