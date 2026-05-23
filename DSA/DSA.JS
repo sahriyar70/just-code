@@ -215,3 +215,9 @@ do {
     console.log(arr[i]);
     i--;
 } while (i >= 0);
+
+
+//do...while loop
+do{
+   // code
+}while(condition)
