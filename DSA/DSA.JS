@@ -221,3 +221,8 @@ do {
 do{
    // code
 }while(condition)
+
+    //Infinite Loop
+// do {
+//    console.log("Hello");
+// }  while(true);
