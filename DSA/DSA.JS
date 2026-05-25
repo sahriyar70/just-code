@@ -226,3 +226,29 @@ do{
 // do {
 //    console.log("Hello");
 // }  while(true);
+
+let arr = [10, 20, 30, 40];
+
+
+// FOR LOOP -print
+console.log("FOR LOOP:");
+
+for(let i = 0; i < arr.length; i++){
+    console.log(arr[i]);
+}
+
+
+//  WHILE LOOP -sum
+console.log("WHILE LOOP:");
+
+let i = 0;
+let sum = 0;
+
+while(i < arr.length){
+    sum += arr[i];
+    i++;
+}
+
+console.log("Sum =", sum);
+
+
