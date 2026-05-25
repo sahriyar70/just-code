@@ -252,3 +252,12 @@ while(i < arr.length){
 console.log("Sum =", sum);
 
 
+//  DO WHILE LOOP -reverse print
+console.log("DO WHILE LOOP:");
+
+let j = arr.length - 1;
+
+do{
+    console.log(arr[j]);
+    j--;
+}while(j >= 0);
