@@ -261,3 +261,13 @@ do{
     console.log(arr[j]);
     j--;
 }while(j >= 0);
+
+//  DO WHILE LOOP -reverse print
+console.log("DO WHILE LOOP:");
+
+let j = arr.length - 1;
+
+do{
+    console.log(arr[j]);
+    j--;
+}while(j >= 0);
