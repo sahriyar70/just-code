@@ -276,3 +276,22 @@ for (let index = 0; index < array.length; index++) {
     const element = array[index];
     
 }
+
+//Debounce Function
+function debounce(fn, delay) {
+  let timeout;
+
+  return function (...args) {
+    clearTimeout(timeout);
+
+    timeout = setTimeout(() => {
+      fn.apply(this, args);
+    }, delay);
+  };
+}
+
+const search = debounce(() => {
+  console.log("Searching...");
+}, 1000);
+
+search();
