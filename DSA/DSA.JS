@@ -321,3 +321,18 @@ switch(op){
     default:
         console.log("Invalid");
 }
+
+
+// Countdown Timer
+let count = 5;
+
+let timer = setInterval(() => {
+    console.log(count);
+
+    count--;
+
+    if(count < 0){
+        clearInterval(timer);
+        console.log("Time End");
+    }
+}, 1000);
