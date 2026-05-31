@@ -358,3 +358,14 @@ for(let i = 0; i < 10; i++){
     a = b;
     b = temp;
 }
+
+//Simple To-Do Add
+let todos = [];
+
+function addTodo(task){
+    todos.push(task);
+    console.log(todos);
+}
+
+addTodo("Learn JS");
+addTodo("Practice DSA");
