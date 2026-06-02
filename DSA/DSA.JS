@@ -381,6 +381,15 @@ const myPromise = new Promise((resolve, reject) => {
     }
 });
 
+//Promise with setTimeout
 myPromise
     .then(result => console.log(result))
     .catch(error => console.log(error));
+
+    const promise = new Promise((resolve) => {
+    setTimeout(() => {
+        resolve("Data Loaded");
+    }, 2000);
+});
+
+promise.then(data => console.log(data));
