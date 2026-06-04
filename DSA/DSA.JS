@@ -410,3 +410,20 @@ function third() {
 }
 
 first();
+
+
+// Async/Await
+function getData() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve("API Data");
+        }, 2000);
+    });
+}
+
+async function showData() {
+    let data = await getData();
+    console.log(data);
+}
+
+showData();
