@@ -435,4 +435,9 @@ function multiply(a) {
   };
 }
 
+//Optional Chaining
 console.log(multiply(5)(10));
+
+const user = {};
+
+console.log(user?.address?.city);
