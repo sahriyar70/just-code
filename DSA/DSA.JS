@@ -441,3 +441,16 @@ console.log(multiply(5)(10));
 const user = {};
 
 console.log(user?.address?.city);
+
+//Prototype
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.sayHi = function() {
+  console.log("Hi " + this.name);
+};
+
+const p1 = new Person("Sahriar");
+
+p1.sayHi();
