@@ -454,3 +454,18 @@ Person.prototype.sayHi = function() {
 const p1 = new Person("Sahriar");
 
 p1.sayHi();
+
+const express = require("express");
+
+const app = express();
+
+const users = [
+    { id: 1, name: "Sahriar" },
+    { id: 2, name: "Rahim" }
+];
+
+app.get("/users", (req, res) => {
+    res.json(users);
+});
+
+app.listen(3000);
