@@ -468,4 +468,13 @@ app.get("/users", (req, res) => {
     res.json(users);
 });
 
+
 app.listen(3000);
+
+//JWT
+const decoded = jwt.verify(
+    token,
+    "secretKey"
+);
+
+console.log(decoded);
