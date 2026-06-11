@@ -492,3 +492,26 @@ async function hashPassword() {
 }
 
 hashPassword();
+
+//Authentication Middleware
+function auth(req, res, next) {
+
+    const token =
+    req.headers.authorization;
+
+    if (!token) {
+        return res.status(401).send(
+            "Unauthorized"
+        );
+    }
+
+    next();
+}
+
+app.get(
+    "/profile",
+    auth,
+    (req, res) => {
+        res.send("Private Route");
+    }
+);
