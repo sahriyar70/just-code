@@ -493,6 +493,7 @@ async function hashPassword() {
 
 hashPassword();
 
+
 //Authentication Middleware
 function auth(req, res, next) {
 
@@ -515,3 +516,4 @@ app.get(
         res.send("Private Route");
     }
 );
+//docker start 
